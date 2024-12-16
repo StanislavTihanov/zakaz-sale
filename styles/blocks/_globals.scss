@@ -1,13 +1,10 @@
 /*----------------------------------global--------------------------------*/
-body.lock {
-    overflow: hidden;
-}
 body { 
     font-family: var(--font-family-base); 
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 400; 
     color: var(--color-black); 
-    background: var(--color-white);
+    background-color: #F8F7FC;
 }
 .wrapper {
     display: flex;
@@ -25,27 +22,23 @@ body {
 }
 section {
     padding: var(--section-padding-y) 0px;
-}
-._ibg {
-    position: relative;
-    img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        object-fit: cover;
+    @include mobile {
+        padding: 2rem 0px;
     }
 }
 .title {
-    @include fluid-text(24, 60);
+    @include fluid-text(20, 46);
+    font-weight: 700;
     line-height: 100%;
-    color: var(--color-red);
+    margin-bottom: 1.3rem;
 }
 .subtitle {
-    @include fluid-text(18, 32);
+    @include fluid-text(16, 32);
     line-height: 100%;
-    color: var(--color-white);
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
-
+.text {
+    @include fluid-text(12, 20);
+}
 /*----------------------------------global--------------------------------*/

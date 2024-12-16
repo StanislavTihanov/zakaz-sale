@@ -1,0 +1,18 @@
+/*----------------------------------discounts--------------------------------*/
+.discounts {
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        gap: 0rem 1rem;
+        @include desktop {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__container {
+        flex-basis: 54rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+/*----------------------------------discounts--------------------------------*/
